@@ -6,7 +6,7 @@ using MechanicShop.Domain.Identity;
 using MechanicShop.Domain.RepairTasks;
 using MechanicShop.Domain.RepairTasks.Parts;
 using MechanicShop.Domain.Workorders.Billing;
-using MechanicShop.Domain.WorkOrders;
+using MechanicShop.Domain.Workorders;
 using Microsoft.EntityFrameworkCore;
 namespace MechanicShop.Application.Common.Interfaces;
 //abstraction for database context (persistences)

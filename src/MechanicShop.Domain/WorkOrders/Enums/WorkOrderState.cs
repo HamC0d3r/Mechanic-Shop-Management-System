@@ -1,4 +1,4 @@
-namespace MechanicShop.Domain.WorkOrders.Enum
+namespace MechanicShop.Domain.Workorders.Enums
 {
     public enum WorkOrderState
     {

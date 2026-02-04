@@ -36,9 +36,6 @@ public sealed class Customer : AuditableEntity
         {
             return CustomerErrors.InvalidPhoneNumber;
         }
-        {
-            return CustomerErrors.PhoneNumberRequired;
-        }
 
         if (string.IsNullOrWhiteSpace(email))
         {
