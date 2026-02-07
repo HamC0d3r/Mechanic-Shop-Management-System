@@ -1,6 +1,6 @@
 using System.Security;
 using MechanicShop.Application.Common.Interfaces;
-using MechanicShop.Domain.Common.Results;
+using MechanicShop.Domain.Common.Results.Abstractions;
 using MediatR;
 
 using Microsoft.Extensions.Caching.Hybrid;
