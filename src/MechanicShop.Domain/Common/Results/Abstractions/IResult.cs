@@ -1,4 +1,4 @@
-namespace MechanicShop.Domain.Common.Results;
+namespace MechanicShop.Domain.Common.Results.Abstractions;
 
 public interface IResult
 {
