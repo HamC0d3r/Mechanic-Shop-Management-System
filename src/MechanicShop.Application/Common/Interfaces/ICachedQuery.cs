@@ -2,7 +2,7 @@ using MediatR;
 
 namespace MechanicShop.Application.Common.Interfaces;
 
-public interface ICachesQuery
+public interface ICachedQuery
 {
     string CacheKey { get; }
     string[] Tags { get; }
@@ -10,6 +10,4 @@ public interface ICachesQuery
     TimeSpan Expiration { get; }
 }
 
-public interface ICachesQuery<TResponse> : IRequest<TResponse>, ICachesQuery
-{
-}
+public interface ICachedQuery<TResponse> : IRequest<TResponse>, ICachedQuery;

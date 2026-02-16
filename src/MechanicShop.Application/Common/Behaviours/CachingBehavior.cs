@@ -20,7 +20,7 @@ public class CachingBehavior<TRequest, TResponse>(
     {
         try
         {
-            if(request is not ICachesQuery<TResponse> cacheableRequest)
+            if(request is not ICachedQuery<TResponse> cacheableRequest)
             {
                 _logger.LogInformation("Request {RequestType} is not cacheable. Proceeding without caching.", typeof(TRequest).Name);
                 return await next(cancellationToken);

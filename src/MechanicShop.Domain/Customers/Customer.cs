@@ -87,4 +87,28 @@ public sealed class Customer : AuditableEntity
 
         return Result.Updated;
     }
+    public Result<Updated> UpsertParts(List<Vehicle> incomingVehicle)
+    {
+        _vehicles.RemoveAll(existing => incomingVehicle.All(v => v.Id != existing.Id));
+
+        foreach (var incoming in incomingVehicle)
+        {
+            var existing = _vehicles.FirstOrDefault(v => v.Id == incoming.Id);
+            if (existing is null)
+            {
+                _vehicles.Add(incoming);
+            }
+            else
+            {
+                var updateVehicleResult = existing.Update(incoming.Make, incoming.Model, incoming.Year, incoming.LicensePlate);
+
+                if (updateVehicleResult.IsError)
+                {
+                    return updateVehicleResult.Errors;
+                }
+            }
+        }
+
+        return Result.Updated;
+    }
 }

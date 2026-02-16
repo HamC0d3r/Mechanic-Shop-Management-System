@@ -2,6 +2,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MechanicShop.Application\MechanicShop.Application.csproj" />
+    <ProjectReference Include="..\MechanicShop.Domain\MechanicShop.Domain.csproj" />
   </ItemGroup>
 
   <PropertyGroup>
