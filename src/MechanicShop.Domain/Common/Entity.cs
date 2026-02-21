@@ -1,3 +1,5 @@
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace MechanicShop.Domain.Common;
 
 public abstract class Entity
@@ -8,6 +10,9 @@ public abstract class Entity
 
     private readonly List<DomainEvent> _domainEvents = [];
     
+    [NotMapped]
+    public IReadOnlyCollection<DomainEvent> DomainEvents => _domainEvents.AsReadOnly();
+
     protected Entity(Guid id)
     {
         Id = id == Guid.Empty ? Guid.NewGuid() : id;
