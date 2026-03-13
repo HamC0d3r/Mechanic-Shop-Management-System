@@ -5,7 +5,7 @@ public enum ErrorKind
     Failure,
     Unexpected,
     Validation,
-    Conflect,
+    Conflict,
     NotFound,
     Unauthorized,
     Forbidden,

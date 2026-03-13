@@ -22,7 +22,7 @@ public readonly record struct Error
         new Error(code, description, ErrorKind.Validation);
 
     public static Error Conflict( string code = nameof(Conflict), string description = "Conflect") =>
-        new Error(code, description, ErrorKind.Conflect);
+        new Error(code, description, ErrorKind.Conflict);
 
     public static Error NotFound( string code = nameof(NotFound), string description = "NotFound") =>
         new Error(code, description, ErrorKind.NotFound);
