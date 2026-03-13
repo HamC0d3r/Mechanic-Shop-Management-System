@@ -16,6 +16,8 @@ builder.Services
 builder.Host.UseSerilog((context, loggerConfig) =>
     loggerConfig.ReadFrom.Configuration(context.Configuration));
 
+builder.Services.AddAntiforgery();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline
@@ -23,6 +25,7 @@ if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
 
+    /* //if i want use swagger
     app.UseSwaggerUI(options =>
     {
         options.SwaggerEndpoint("/openapi/v1.json", "MechanicShop API V1");
@@ -30,7 +33,7 @@ if (app.Environment.IsDevelopment())
         options.EnableDeepLinking();
         options.DisplayRequestDuration();
         options.EnableFilter();
-    });
+    });*/
 
     app.MapScalarApiReference();
 
