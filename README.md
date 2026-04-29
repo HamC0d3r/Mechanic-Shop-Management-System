@@ -1,6 +1,6 @@
 # Mechanic Shop Management System
 
-A modern, full-stack web application for managing mechanic shop operations, built with **Blazor WebAssembly** and ASP.NET Core (.NET 9). This system streamlines work orders, billing, customer management, real-time updates, and more.
+A modern, full-stack web application for managing mechanic shop operations, built with **Blazor WebAssembly** and ASP.NET Core. This system streamlines work orders, billing, customer management, real-time updates, and more.
 
 ## Features
 
@@ -10,11 +10,10 @@ A modern, full-stack web application for managing mechanic shop operations, buil
 - **Real-Time Updates:** Live work order status via SignalR.
 - **Role-Based Access:** Secure endpoints and UI with authentication and authorization.
 - **Dashboard & Reporting:** View daily stats and shop performance.
-- **Responsive UI:** Built with Blazor for a seamless, interactive experience.
 
 ## Tech Stack
 
-- **Backend:** ASP.NET Core Web API (.NET 9)
+- **Backend:** ASP.NET Core Web API (.NET )
 - **Database:** Entity Framework Core (SQL Server)
 - **Authentication:** JWT Bearer, ASP.NET Core Identity
 - **Real-Time:** SignalR
@@ -24,7 +23,7 @@ A modern, full-stack web application for managing mechanic shop operations, buil
 
 ### Prerequisites
 
-- [.NET 9 SDK](https://dotnet.microsoft.com/download)
+- [.NET SDK](https://dotnet.microsoft.com/download)
 - [SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-downloads) 
 - [Visual Studio 2022](https://visualstudio.microsoft.com/)
 
